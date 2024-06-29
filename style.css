@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #C4BBAF;
+
+}
+.game {
+    height: 92.9vh;
+    background-color: #C4BBAF;
+    text-align: center;
+}
+
+.tictactoe {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-content: center;
+    gap: 5px;
+}
+
+.boxes {
+    height: 11vw;
+    width: 11vw;
+    min-height: 110px;
+    min-width: 110px;
+    background-color: #B1AE91;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 90px;
+    text-align: center;
+    color: black;
+}
+
+.boxes:hover {
+    background-color: #c4c0a2;
+}
+
+.hidden {
+    display: none;
+}
+
+.newgame {
+    font-size: 1.4rem;
+    background-color: #A5978B;
+    border: 2px solid;
+    border-radius: 13px;
+    padding: 15px;
+    margin-top: 15px;
+
+}
+
+.newgame:hover {
+    animation-name: transform;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transform {
+
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-4px);
+    }
+
+}
+
+.turn {
+    font-size: 2rem;
+    padding: 25px 0px;
+
+}
+
+@media (max-width: 445px){
+    .turn{
+        padding: 10% 0px 20% 0px;
+    }
+    .newgame{
+        margin-top: 25%;
+    }
+}
+
